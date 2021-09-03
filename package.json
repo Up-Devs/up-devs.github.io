@@ -1,0 +1,46 @@
+{
+    "name": "up-devs-guide",
+    "description": "A guide/blog typeof thing for Up Devs.",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "lint": "eslint . --ext js,md,vue",
+        "dev": "vuepress dev guide",
+        "build": "NODE_ENV=production vuepress build guide"
+    },
+    "repository": "https://github.com/Up-Devs/up-devs.github.io.git",
+    "keywords": [
+        "discord",
+        "bot",
+        "guide",
+        "tutorial",
+        "javascript",
+        "node"
+    ],
+    "author": "Sanctuary <sanc.pw@gmail.com>",
+    "contributors": [
+        "dragonfire535 <danielbodendahl@gmail.com>",
+        "Drahcirius",
+        "Lewdcario",
+        "Souji <timoqueezle@gmail.com>"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Up-Devs/up-devs.github.io/issues"
+    },
+    "homepage": "https://up.is-a.dev",
+    "devDependencies": {
+        "@vuepress/plugin-docsearch": "^2.0.0-beta.24",
+        "@vuepress/plugin-google-analytics": "^2.0.0-beta.24",
+        "babel-eslint": "^10.0.1",
+        "eslint": "^7.18.0",
+        "eslint-config-sora": "^3.1.0",
+        "eslint-plugin-markdown": "^2.2.0",
+        "eslint-plugin-vue": "^7.5.0",
+        "vuepress-vite": "^2.0.0-beta.24"
+    },
+    "dependencies": {
+        "@discord-message-components/vue": "^0.2.1",
+        "@vuepress/client": "^2.0.0-beta.24"
+    }
+}

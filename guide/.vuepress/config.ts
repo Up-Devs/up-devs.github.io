@@ -56,7 +56,6 @@ const config = defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 			{
 				apiKey: '5dfdf72c0c568fd60ab17ebf1156287e',
 				indexName: 'updevs',
-				appId: 'KKC4RK3KTS',
 				placeholder: 'Search guide',
 			},
 		],

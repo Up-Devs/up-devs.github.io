@@ -50,19 +50,15 @@ const config = defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 	plugins: [],
 });
 
-const { ALGOLIA_DOCSEARCH_API_KEY, GOOGLE_ANALYTICS_ID, NODE_ENV } = process.env;
-
-if (NODE_ENV === 'production' && ALGOLIA_DOCSEARCH_API_KEY && GOOGLE_ANALYTICS_ID) {
 	config.plugins.push(
 		[
 			'@vuepress/plugin-docsearch',
 			{
-				apiKey: ALGOLIA_DOCSEARCH_API_KEY,
+				apiKey: '5dfdf72c0c568fd60ab17ebf1156287e',
 				indexName: 'updevs',
 				placeholder: 'Search guide',
 			},
 		],
 	);
-}
 
 export default config;

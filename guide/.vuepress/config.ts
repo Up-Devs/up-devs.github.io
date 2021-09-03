@@ -51,9 +51,8 @@ const config = defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 });
 
       const ALGOLIA_DOCSEARCH_API_KEY = '5dfdf72c0c568fd60ab17ebf1156287e'
-      const { NODE_ENV } = process.env;
 
-    if (NODE_ENV === 'production' && ALGOLIA_DOCSEARCH_API_KEY) {
+    if (ALGOLIA_DOCSEARCH_API_KEY) {
 	config.plugins.push(
 		[
 			'@vuepress/plugin-docsearch',
@@ -62,10 +61,6 @@ const config = defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 				indexName: 'updevs',
 				placeholder: 'Search guide',
 			},
-		],
-		[
-			'@vuepress/plugin-google-analytics',
-			{ id: GOOGLE_ANALYTICS_ID },
 		],
 	);
 }

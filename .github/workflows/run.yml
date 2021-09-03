@@ -1,4 +1,4 @@
-name: deploy
+name: Deploy
 on: [push]
 jobs:
   build-and-deploy:
@@ -11,9 +11,9 @@ jobs:
       uses: jenkey2011/vuepress-deploy@dev
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        TARGET_REPO: discord-buttons/docs
+        TARGET_REPO: Up-Devs/updevs.github.io
         TARGET_BRANCH: gh-pages
         BUILD_SCRIPT: yarn && yarn build
-        BUILD_DIR: docs/.vuepress/dist/
-        CNAME: discord-buttons.js.org
-        COMMIT_MESSAGE: Deploy Docs
+        BUILD_DIR: /docs/.vuepress/dist/
+        CNAME: up.is-a.dev
+        COMMIT_MESSAGE: "[Automa-Tick] Guide Deployment"

@@ -50,7 +50,8 @@ const config = defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 	plugins: [],
 });
 
-      const { ALGOLIA_DOCSEARCH_API_KEY, NODE_ENV } = process.env;
+      const ALGOLIA_DOCSEARCH_API_KEY = '5dfdf72c0c568fd60ab17ebf1156287e'
+      const { NODE_ENV } = process.env;
 
     if (NODE_ENV === 'production' && ALGOLIA_DOCSEARCH_API_KEY) {
 	config.plugins.push(

@@ -50,19 +50,19 @@ const config = defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 	plugins: [],
 });
 
-      const ALGOLIA_DOCSEARCH_API_KEY = '5dfdf72c0c568fd60ab17ebf1156287e'
+      const ALGOLIA_DOCSEARCH_API_KEY = ''
 
-    if (ALGOLIA_DOCSEARCH_API_KEY) {
+    /*if (ALGOLIA_DOCSEARCH_API_KEY) {
 	config.plugins.push(
 		[
 			'@vuepress/plugin-docsearch',
 			{
 				apiKey: ALGOLIA_DOCSEARCH_API_KEY,
-				indexName: 'updevs',
+				indexName: '',
 				placeholder: 'Search guide',
 			},
 		],
-	);
+	);*/
 }
 
 export default config;

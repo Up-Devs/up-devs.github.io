@@ -62,7 +62,7 @@ const config = defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
 				placeholder: 'Search guide',
 			},
 		],
-	);*/
-}
+	);
+}*/
 
 export default config;

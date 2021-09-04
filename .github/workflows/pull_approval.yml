@@ -1,0 +1,23 @@
+name: Pull Request Approval
+
+on:
+ pull_request:
+  types: [opened, edited, reopened, ready_for_review, review_requested, review_request_removed, converted_to_draft]
+ pull_request_review:
+  [submitted, edited, dismissed]
+
+jobs:
+  label-approved:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: docker://tiangolo/label-approved:0.0.2
+      with:
+        token: ${{ secrets.ACCESS_TOKEN }}
+        config: >
+          {
+            "review: approved":
+              {
+                "number": 1,
+                "await_label": "review: waiting"
+              }
+          }

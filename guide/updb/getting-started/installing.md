@@ -24,7 +24,7 @@ Copy this in your console.
 
 ## Run Up-Devs.DB
 
-```js {1-2, 4}
+```js {1-2,4}
 const { MongoDB, JsonDB } = require('up-devs.db');
 const db = new MongoDB('mongodb+srv://up-devs/updevs.db')
 // or

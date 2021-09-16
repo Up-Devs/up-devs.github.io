@@ -21,3 +21,25 @@ npm i up-devs.db
 ```
 
 Copy this in your console.
+
+## Run Up-Devs.DB
+
+```
+const { MongoDB, JsonDB } = require('up-devs.db');
+const db = new MongoDB('mongodb+srv://up-devs/updevs.db')
+// or
+const db = new JsonDB('updevs-db')
+
+// Setting an object to this database.
+db.set('countries', { list: ['Turkey'] }) // 'countries' data: { list: 'Turkey' }
+
+// Pushing an element to this data.
+db.push('countries.list', 'USA') // 'countries' data: { list: ['Turkey', 'USA'] }
+
+// Adding to a number to an object.
+db.add('countries.count', 206) // 'countries' data: { list: ['Turkey', 'USA'], count: 206  }
+
+// Fetching those datas.
+db.fetch('countries.list') // 'countries' data: ['Turkey', 'USA']
+db.get('countries.count') // 'countries' data: 206
+```

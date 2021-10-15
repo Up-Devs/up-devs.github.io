@@ -15,5 +15,4 @@ jobs:
         TARGET_BRANCH: gh-pages
         BUILD_SCRIPT: yarn && yarn build
         BUILD_DIR: guide/.vuepress/dist/
-        CNAME: up.is-a.dev
         COMMIT_MESSAGE: "[Automa-Tick] Guide Deployment"

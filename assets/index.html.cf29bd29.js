@@ -1,0 +1,1 @@
+const e={key:"v-8daa1a0e",path:"/",title:"Up Devs",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Who are we?",slug:"who-are-we",children:[]},{level:2,title:"We make",slug:"we-make",children:[]},{level:2,title:"Our Team",slug:"our-team",children:[]}],filePathRelative:"README.md",git:{updatedTime:163432459e4}};export{e as data};
